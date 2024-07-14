@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { io } from "socket.io-client";
 import { useAtom, atom } from "jotai";
 
-export const socket = io("https://r3f-multiplayer-server.onrender.com:10000");
+// export const socket = io("https://r3f-multiplayer-server.onrender.com:10000");
+export const socket = io("https://r3f-multiplayer-server-production.up.railway.app/:8080")
 export const charactersAtom = atom([]);
 
 export const SocketManager = () => {
